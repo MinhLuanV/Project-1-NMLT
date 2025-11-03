@@ -1,1 +1,4 @@
-﻿  Project.vcxproj -> C:\Users\ASUS\Desktop\Project NMLT\Project\x64\Debug\Project.exe
+﻿  main.cpp
+C:\Users\Admin\Desktop\ProjectNMLT\Project-1-NMLT\Project\main.cpp(59,10): warning C4101: 'input': unreferenced local variable
+C:\Users\Admin\Desktop\ProjectNMLT\Project-1-NMLT\Project\main.cpp(252,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Project.vcxproj -> C:\Users\Admin\Desktop\ProjectNMLT\Project-1-NMLT\x64\Debug\Project.exe

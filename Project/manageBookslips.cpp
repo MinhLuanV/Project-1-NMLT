@@ -19,7 +19,7 @@ extern char slip_expected_return_date[][11];
 extern int slip_borrow_ISBN[];
 extern char slip_actual_return_date[][11];
 
-// Hàm tính ngày trả sách dự kiến
+// Hàm tính ngày trả sách dự kiếnz	
 void calculate_expect_return_date(char slip_borrow_date[], char slip_expected_return_date[])
 {
 	int day, month, year;
@@ -137,7 +137,7 @@ void create_borrow_slip()
 		else {
 
 			book_quantity[book_index]--;
-			
+			slip_borrow_ISBN[book_index] = input_isbn;
 			printf("Đã mượn sách ISBN %03d. Số lượng sách còn lại: %d\n", input_isbn, book_quantity[book_index]);
 		}
 

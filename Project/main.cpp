@@ -57,6 +57,7 @@ void clear_screen()
 void display_menu()
 {
     char input;
+    system("cls");
     printf("CHƯƠNG TRÌNH QUẢN LÍ THƯ VIỆN \n");
     printf("1. Quản Lí Độc Giả.\n");
     printf("2. Quản Lí Sách.\n");
@@ -73,6 +74,7 @@ void reader_management()
     char input;
     do
     {
+        system("cls");
         printf("QUẢN LÍ ĐỘC GIẢ \n");
         printf("a. Xem Danh Sách Độc Giả Trong Thư Viện.\n");
         printf("b. Thêm Độc Giả.\n");
@@ -91,25 +93,32 @@ void reader_management()
             return;
         }
         while (getchar() != '\n');
+        system("cls");
         switch (tolower(input))
         {
         case 'a':
             show_list_reader();
+            system("pause");
             break;
         case 'b':
             add_reader();
+            system("pause");
             break;
         case 'c':
             edit_reader_by_code();
+            system("pause");
             break;
         case 'd':
             delete_reader();
+            system("pause");
             break;
         case 'e':
             find_reader_by_id();
+            system("pause");
             break;
         case 'f':
             search_book_by_reader_name();
+            system("pause");
             break;
         case '0':
             break;
@@ -129,6 +138,7 @@ void book_management()
     char input;
     do
     {
+        system("cls");
         printf("QUẢN LÍ SÁCH \n");
         printf("a. Xem Danh Sách Các Sách Trong Thư Viện.\n");
         printf("b. Thêm Sách.\n");
@@ -146,25 +156,32 @@ void book_management()
             return;
         }
         while (getchar() != '\n');
+        system("cls");
         switch (tolower(input))
         {
         case 'a':
             show_list_book();
+            system("pause");
             break;
         case 'b':
             add_book();
+            system("pause");
             break;
         case 'c':
             edit_book_by_ISBN();
+            system("pause");
             break;
         case 'd':
             delete_book();
+            system("pause");
             break;
         case 'e':
             find_book_by_ISBN();
+            system("pause");
             break;
         case 'f':
             find_book_by_title();
+            system("pause");
             break;
         case '0':
             break;
@@ -184,6 +201,7 @@ void basic_statistic()
     char input;
     do
     {
+        system("cls");
         printf("CÁC THỐNG KÊ CƠ BẢN \n");
         printf("a. Thống Kê Số Lượng Sách Trong Thư Viện.\n");
         printf("b. Thống Kê Số Lượng Sách Theo Thể Loại.\n");
@@ -201,25 +219,32 @@ void basic_statistic()
             return;
         }
         while (getchar() != '\n');
+        system("cls");
         switch (tolower(input))
         {
         case 'a':
             statistic_total_books();
+            system("pause");
             break;
         case 'b':
             statistic_book_by_category();
+            system("pause");
             break;
         case 'c':
             statistic_total_readers();
+            system("pause");
             break;
         case 'd':
             statistic_reader_by_gender();
+            system("pause");
             break;
         case 'e':
             statistic_books_on_loan();
+            system("pause");
             break;
         case 'f':
             statistic_late_return_reader();
+            system("pause");
             break;
         case '0':
 
@@ -249,24 +274,33 @@ void main()
         switch (choice)
         {
         case 1:
+            system("cls");
             reader_management();
             break;
         case 2:
+            system("cls");
             book_management();
             break;
         case 3:
+            system("cls");
             create_borrow_slip();
+            system("pause");
             break;
         case 4:
+            system("cls");
             create_return_slip();
+            system("pause");
             break;
         case 5:
+            system("cls");
             basic_statistic();
             break;
         case 0:
             printf("\nĐã thoát chương trình. Tạm biệt!\n");
             break;
         }
+        if (choice != 0)
+            continue;
     }
     while (choice != 0);
 }
