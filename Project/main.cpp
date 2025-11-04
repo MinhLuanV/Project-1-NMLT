@@ -123,11 +123,6 @@ void reader_management()
         case '0':
             break;
         }
-        if (input != '0')
-        {
-            printf("\n\n(Nhấn Enter để tiếp tục...)\n\n");
-            getchar();
-        }
     }
     while (input != '0');
 }
@@ -185,11 +180,6 @@ void book_management()
             break;
         case '0':
             break;
-        }
-        if (input != '0')
-        {
-            printf("\n\n(Nhấn Enter để tiếp tục...)\n\n");
-            getchar();
         }
     } 
     while (input != '0');

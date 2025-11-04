@@ -11,6 +11,7 @@ extern int reader_code[];
 extern char reader_name[][100];
 extern char reader_expired_date_card[][11];
 extern int book_ISBN[];
+extern int book_price[];
 extern int book_quantity[];
 extern char book_title[][100];
 extern int slip_reader_code[];							
@@ -19,7 +20,7 @@ extern char slip_expected_return_date[][11];
 extern int slip_borrow_ISBN[];
 extern char slip_actual_return_date[][11];
 
-// Hàm tính ngày trả sách dự kiếnz	
+// Hàm tính ngày trả sách dự kiến
 void calculate_expect_return_date(char slip_borrow_date[], char slip_expected_return_date[])
 {
 	int day, month, year;
@@ -85,6 +86,7 @@ void create_borrow_slip()
 	if (slip_count >= 100)
 	{
 		printf("Đã đủ số lượng phiếu mượn.\n");
+		return;
 	}
 
 	printf("--- LẬP PHIẾU MƯỢN SÁCH ---\n");
@@ -103,7 +105,7 @@ void create_borrow_slip()
 	printf("Độc giả hợp lệ: %s\n", reader_name[reader_index]);
 
 	// Nhập ngày mượn
-	printf("Nhập Ngày Mượn: ");
+	printf("Nhập ngày mượn: ");
 	scanf_s(" %s", borrow_date, 11);
 
 	// Tính ngày trả dự kiến 
@@ -117,35 +119,31 @@ void create_borrow_slip()
 	slip_count++;
 
 	// Mượn sách
-	printf("--- DANH SÁCH SÁCH MƯỢN ---\n");
-
-	do {
 		int input_isbn;
 		int book_index;
 
-		printf("\nNhập ISBN của sách muốn mượn: ");
+		printf("Nhập ISBN của sách muốn mượn: ");
 		scanf_s(" %d", &input_isbn);
 
 		book_index = find_book_index_by_ISBN(&input_isbn);
 
-		if (book_index == -1 || book_ISBN[book_index] == 0) {
+		if (book_index == -1 || book_ISBN[book_index] == 0) 
+		{
 			printf("Không tìm thấy sách với ISBN này.\n");
 		}
-		else if (book_quantity[book_index] <= 0) {
+		else if (book_quantity[book_index] <= 0) 
+		{
 			printf("Sách '%s' đã hết, không thể mượn.\n", book_title[book_index]);
 		}
-		else {
-
+		else 
+		{
 			book_quantity[book_index]--;
-			slip_borrow_ISBN[book_index] = input_isbn;
-			printf("Đã mượn sách ISBN %03d. Số lượng sách còn lại: %d\n", input_isbn, book_quantity[book_index]);
+			slip_borrow_ISBN[current_slip_index] = input_isbn;
+			slip_actual_return_date[current_slip_index][0] = '\0';
+			printf("Đã mượn sách ISBN %03d.\n", input_isbn);
+			printf("Tên sách: %s\n", book_title[book_index]);
+			printf("Số lượng còn lại: %d\n", book_quantity[book_index]);
 		}
-
-		// Thêm sách mượn
-		printf("Bạn có muốn mượn thêm sách không? (y/n): ");
-		scanf_s(" %c", &choice_continue, 1);
-
-	} while (choice_continue == 'y' || choice_continue == 'Y');
 
 	printf("Đã Lập Phiếu Mượn Sách Thành Công.\n");
 }
@@ -229,6 +227,7 @@ void create_return_slip() {
 	int slip_index = -1;
 	int book_index = -1;
 	char actual_return_date[11];
+	char book_status[10];
 	int days_late = 0;
 	long fine = 0; // Tiền phạt
 
@@ -240,7 +239,7 @@ void create_return_slip() {
 	printf("--- LẬP PHIẾU TRẢ SÁCH ---\n");
 
 	// Nhập thông tin để tìm kiếm phiếu mượn đang hoạt động
-	printf("Nhập Mã độc giả: ");
+	printf("Nhập mã độc giả: ");
 	scanf_s(" %d", &input_reader_code);
 	printf("Nhập ISBN của sách cần trả: ");
 	scanf_s(" %d", &input_isbn);
@@ -249,7 +248,7 @@ void create_return_slip() {
 	slip_index = -1; 
 
 	for (int i = 0; i < slip_count; i++) {
-		// Tìm phiếu khớp Mã ĐG, khớp ISBN, và CHƯA có ngày trả thực tế (đã trả)
+		// Tìm phiếu khớp mã độc giả, khớp ISBN, và chưa có ngày trả thực tế (đã trả)
 		if (slip_reader_code[i] == input_reader_code && 
 			slip_borrow_ISBN[i] == input_isbn && 
 			slip_actual_return_date[i][0] == '\0') // Kiểm tra chuỗi rỗng
@@ -259,38 +258,57 @@ void create_return_slip() {
 		}
 	}
 
-	if (slip_index == -1) {
+	if (slip_index == -1) 
+	{
 		printf("Không tìm thấy phiếu mượn sách.\n");
 		return;
 	}
+	printf("Tình trạng sách (còn/ mất): ");
+	scanf_s(" %s", book_status, 10);
 
-	// Nhập Ngày Trả Thực Tế
-	printf("Nhập Ngày Trả Thực Tế: ");
+	// Nhập ngày trả thực tế
+	printf("Nhập ngày trả thực tế: ");
 	scanf_s(" %s", actual_return_date, 11);
 
 	// Tìm kiếm sách để cập nhật số lượng
 	book_index = find_book_index_by_ISBN(&input_isbn);
 
-	if (book_index == -1 || book_ISBN[book_index] == 0) {
+	if (book_index == -1 || book_ISBN[book_index] == 0) 
+	{
 		printf("Không tìm thấy thông tin sách trong thư viện, không thể tăng số lượng.\n");
 	}
-	else {
+	else 
+	{
 		book_quantity[book_index]++;
 		printf("Đã tăng số lượng sách ISBN %03d lên 1.\n", input_isbn);
 	}
 
-	// Cập nhật Ngày Trả Thực Tế vào phiếu mượn
+	// Cập nhật ngày trả thực tế vào phiếu mượn
 	strcpy(slip_actual_return_date[slip_index], actual_return_date);
 
 	// Tính toán tiền phạt
-	// Cần hàm calculate_date_difference(ngày dự kiến, ngày thực tế)
 	days_late = calculate_date_difference(slip_expected_return_date[slip_index], actual_return_date);
-
+	if (strcmp(book_status, "Mất") == 0 || strcmp(book_status, "mất") == 0)
+	{
+		fine = book_price[book_index] * 2;
+	}
 	if (days_late > 0) {
-		fine = days_late * 5000;
+		fine += days_late * 5000;
 		printf("--- Đóng Phạt Quá Hạn---\n");
 		printf("Ngày trả dự kiến: %s\n", slip_expected_return_date[slip_index]);
-		printf("Trễ %d ngày. Tiền phạt: %ld VND\n", days_late, fine);
+		if (strcmp(book_status, "Mất") == 0 || strcmp(book_status, "mất") == 0)
+		{
+			printf("Phạt mất sách: %d VND\n", book_price[book_index] * 2);
+		}
+		printf("Trễ %d ngày. \n", days_late);
+		printf("Tiền phạt trễ %d ngày: %d\n", days_late, days_late * 5000);
+		printf("Tổng tiền phạt: %d VND\n", fine);
+	}
+	else if (days_late <= 0 && (strcmp(book_status, "Mất") == 0 || strcmp(book_status, "mất") == 0))
+	{
+		printf("--- Đóng Phạt Mất Sách---\n");
+		printf("Ngày trả dự kiến: %s\n", slip_expected_return_date[slip_index]);
+		printf("Phạt mất sách: %d VND\n", book_price[book_index] * 2);
 	}
 	else {
 		printf("Trả sách đúng hạn.\n");

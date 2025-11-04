@@ -32,6 +32,7 @@ void show_list_book()
 		printf("Thể loại\t\t: %s\n", book_category[i]);
 		printf("Giá sách\t\t: %d\n", book_price[i]);
 		printf("Số quyển sách\t\t: %d\n", book_quantity[i]);
+		printf("==============================================\n");
 	}
 }
 
@@ -45,6 +46,7 @@ void add_book()
 	}
 	int i = book_count;
 	printf("--- THÊM SÁCH ---\n");
+
 	// Mã sách (ISBN) tự động tăng
 	book_ISBN[i] = i + 1;
 	printf("ISBN (mã sách): %03d\n", book_ISBN[i]);
@@ -185,7 +187,7 @@ void delete_book()
 	book_price[index] = 0;
 	book_quantity[index] = 0;
 
-	printf("-- Đã Xóa Thành Công Sách Mã %03d ---\n", ISBN_to_delete);
+	printf("--- Đã Xóa Thành Công Sách Mã %03d ---\n", ISBN_to_delete);
 }
 
 // Hàm tìm kiếm sách theo ISBN

@@ -1,4 +1,15 @@
 ﻿  main.cpp
-C:\Users\Admin\Desktop\ProjectNMLT\Project-1-NMLT\Project\main.cpp(59,10): warning C4101: 'input': unreferenced local variable
-C:\Users\Admin\Desktop\ProjectNMLT\Project-1-NMLT\Project\main.cpp(252,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  Project.vcxproj -> C:\Users\Admin\Desktop\ProjectNMLT\Project-1-NMLT\x64\Debug\Project.exe
+C:\Users\ASUS\Desktop\Project-1-NMLT\Project\main.cpp(59,10): warning C4101: 'input': unreferenced local variable
+C:\Users\ASUS\Desktop\Project-1-NMLT\Project\main.cpp(248,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  manageBookslips.cpp
+C:\Users\ASUS\Desktop\Project-1-NMLT\Project\manageBookslips.cpp(76,7): warning C4101: 'choice_continue': unreferenced local variable
+C:\Users\ASUS\Desktop\Project-1-NMLT\Project\manageBookslips.cpp(195,57): warning C4474: 'sscanf_s' : too many arguments passed for format string
+      C:\Users\ASUS\Desktop\Project-1-NMLT\Project\manageBookslips.cpp(195,57):
+      placeholders and their parameters expect 3 variadic arguments, but 4 were provided
+  
+C:\Users\ASUS\Desktop\Project-1-NMLT\Project\manageBookslips.cpp(201,55): warning C4474: 'sscanf_s' : too many arguments passed for format string
+      C:\Users\ASUS\Desktop\Project-1-NMLT\Project\manageBookslips.cpp(201,55):
+      placeholders and their parameters expect 3 variadic arguments, but 4 were provided
+  
+  Generating Code...
+  Project.vcxproj -> C:\Users\ASUS\Desktop\Project-1-NMLT\x64\Debug\Project.exe

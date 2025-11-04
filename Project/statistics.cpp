@@ -83,6 +83,7 @@ void statistic_book_by_category()
     {
         printf("Thể loại: %s\n", categories[i]);
         printf("Số lượng: %d\n", count[i]);
+        printf("==============================================\n");
     }
     printf("\n");
 }
@@ -110,7 +111,7 @@ void statistic_reader_by_gender()
     printf("--- THỐNG KÊ SỐ LƯỢNG ĐỘC GIẢ THEO GIỚI TÍNH ---\n");
     for (int i = 0; i < reader_count; i++)
     {
-        if (strcmp(reader_gender[i], "Nam") == 0)
+        if (strcmp(reader_gender[i], "Nam") == 0 || strcmp(reader_gender[i], "nam") == 0)
         {
             male_count++;
         }
@@ -128,7 +129,8 @@ void statistic_books_on_loan()
 {
     int total_borrow_book = 0;
     printf("--- THỐNG KÊ SỐ SÁCH ĐANG ĐƯỢC MƯỢN ---\n");
-    for (int i = 0; i < slip_count; i++) {
+    for (int i = 0; i < slip_count; i++) 
+    {
         // Phiếu đang hoạt động nếu chuỗi ngày trả thực tế là rỗng
         if (slip_actual_return_date[i][0] == '\0') 
         {
@@ -147,7 +149,7 @@ void statistic_late_return_reader()
     int reader_index;
     printf("--- THỐNG KÊ DANH SÁCH ĐỘC GIẢ BỊ TRỄ HẠN ---\n");
     printf("Nhập ngày hiện tại: ");
-    scanf_s(" %s", current_date[11]);
+    scanf_s(" %s", current_date,11);
     for (int i = 0; i < slip_count; i++)
     {
         day_late = calculate_date_difference(slip_expected_return_date[i], current_date);
@@ -157,8 +159,9 @@ void statistic_late_return_reader()
             reader_index = find_reader_index_by_code(&slip_reader_code[i]);
             if (reader_index != -1)
             {
-                printf("Mã độc giả\t\t: %03d\n", reader_code[reader_index]);
+                printf("Mã độc giả\t\t :%03d\n", reader_code[reader_index]);
                 printf("Họ tên\t\t\t :%s\n", reader_name[reader_index]);
+                printf("==============================================\n");
             }
             else
             {
@@ -172,6 +175,6 @@ void statistic_late_return_reader()
     }
     else
     {
-        printf(" Tổng cộn %d độc giả bị trễ hạn: \n", late_count);
+        printf(" Tổng cộng %d độc giả bị trễ hạn \n", late_count);
     }
 }

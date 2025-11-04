@@ -77,6 +77,7 @@ void show_list_reader()
 		printf("Địa chỉ\t\t\t: %s\n", reader_address[i]);
 		printf("Ngày lập thẻ\t\t: %s\n", reader_create_date_card[i]);
 		printf("Ngày hết hạn\t\t: %s\n", temp_expire_date);
+		printf("==============================================\n");
 	}
 }
 
@@ -109,7 +110,7 @@ void add_reader()
 
 	// Nhập giới tính
 	printf("Nhập giới tính: ");
-	scanf_s(" %s", reader_gender[i], 4);
+	scanf_s(" %s", reader_gender[i], 10);
 
 	// Nhập email
 	printf("Nhập email: ");
