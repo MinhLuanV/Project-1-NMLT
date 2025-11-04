@@ -1,26 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\Project-1-NMLT\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|C:\\Users\\ASUS\\Desktop\\Project-1-NMLT\\Project\\manageBookslips.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|solutionrelative:Project\\manageBookslips.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|C:\\Users\\ASUS\\Desktop\\Project-1-NMLT\\Project\\manageBooks.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|solutionrelative:Project\\manageBooks.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|C:\\Users\\ASUS\\Desktop\\Project-1-NMLT\\Project\\manageReaders.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|solutionrelative:Project\\manageReaders.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|C:\\Users\\ASUS\\Desktop\\Project-1-NMLT\\Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|solutionrelative:Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|C:\\Users\\ASUS\\Desktop\\Project-1-NMLT\\Project\\statistics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\manageBookslips.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|solutionrelative:Project\\manageBookslips.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\manageReaders.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|solutionrelative:Project\\manageReaders.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\statistics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|solutionrelative:Project\\statistics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\manageBooks.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|solutionrelative:Project\\manageBooks.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5C87F194-14EC-41B7-8F29-C6A7A55532FA}|Project\\Project.vcxproj|solutionrelative:Project\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "manageBooks.cpp",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Project-1-NMLT\\Project\\manageBooks.cpp",
-              "RelativeDocumentMoniker": "Project\\manageBooks.cpp",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Project-1-NMLT\\Project\\manageBooks.cpp",
-              "RelativeToolTip": "Project\\manageBooks.cpp",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFUAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "statistics.cpp",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\statistics.cpp",
+              "RelativeDocumentMoniker": "Project\\statistics.cpp",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\statistics.cpp",
+              "RelativeToolTip": "Project\\statistics.cpp",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAiwKIAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-04T07:17:43.908Z",
+              "WhenOpened": "2025-11-04T14:40:40.834Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "manageReaders.cpp",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Project-1-NMLT\\Project\\manageReaders.cpp",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\manageReaders.cpp",
               "RelativeDocumentMoniker": "Project\\manageReaders.cpp",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Project-1-NMLT\\Project\\manageReaders.cpp",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\manageReaders.cpp",
               "RelativeToolTip": "Project\\manageReaders.cpp",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAAAEkAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAAAIgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-03T16:03:02.311Z",
+              "WhenOpened": "2025-11-04T14:30:46.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "main.h",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\main.h",
+              "RelativeDocumentMoniker": "Project\\main.h",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\main.h",
+              "RelativeToolTip": "Project\\main.h",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-04T14:29:38.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "statistics.cpp",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Project-1-NMLT\\Project\\statistics.cpp",
-              "RelativeDocumentMoniker": "Project\\statistics.cpp",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Project-1-NMLT\\Project\\statistics.cpp",
-              "RelativeToolTip": "Project\\statistics.cpp",
-              "ViewState": "AgIAAGMAAAAAAAAAAIA0wHEAAAAIAAAAAAAAAA==",
+              "Title": "manageBooks.cpp",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\manageBooks.cpp",
+              "RelativeDocumentMoniker": "Project\\manageBooks.cpp",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\manageBooks.cpp",
+              "RelativeToolTip": "Project\\manageBooks.cpp",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAiwL4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-03T15:44:03.765Z",
+              "WhenOpened": "2025-11-04T07:17:43.908Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "manageBookslips.cpp",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Project-1-NMLT\\Project\\manageBookslips.cpp",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\manageBookslips.cpp",
               "RelativeDocumentMoniker": "Project\\manageBookslips.cpp",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Project-1-NMLT\\Project\\manageBookslips.cpp",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\manageBookslips.cpp",
               "RelativeToolTip": "Project\\manageBookslips.cpp",
-              "ViewState": "AgIAABMBAAAAAAAAAAAAACYBAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAAGEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-03T15:27:38.177Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Project-1-NMLT\\Project\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\main.cpp",
               "RelativeDocumentMoniker": "Project\\main.cpp",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Project-1-NMLT\\Project\\main.cpp",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\ProjectNMLT\\Project-1-NMLT\\Project\\main.cpp",
               "RelativeToolTip": "Project\\main.cpp",
-              "ViewState": "AgIAABMBAAAAAAAAAIA1wCABAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAIAzwH8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-03T15:08:43.722Z",
               "EditorCaption": ""

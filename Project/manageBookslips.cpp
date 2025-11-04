@@ -95,7 +95,7 @@ void create_borrow_slip()
 	printf("Nhập mã độc giả để lập phiếu: ");
 	scanf_s(" %d", &input_reader_code);
 
-	reader_index = find_reader_index_by_code(&input_reader_code);
+	reader_index = find_reader_index_by_code(input_reader_code);
 
 	if (reader_index == -1 || reader_code[reader_index] == 0) 
 	{
@@ -125,7 +125,7 @@ void create_borrow_slip()
 		printf("Nhập ISBN của sách muốn mượn: ");
 		scanf_s(" %d", &input_isbn);
 
-		book_index = find_book_index_by_ISBN(&input_isbn);
+		book_index = find_book_index_by_ISBN(input_isbn);
 
 		if (book_index == -1 || book_ISBN[book_index] == 0) 
 		{
@@ -271,7 +271,7 @@ void create_return_slip() {
 	scanf_s(" %s", actual_return_date, 11);
 
 	// Tìm kiếm sách để cập nhật số lượng
-	book_index = find_book_index_by_ISBN(&input_isbn);
+	book_index = find_book_index_by_ISBN(input_isbn);
 
 	if (book_index == -1 || book_ISBN[book_index] == 0) 
 	{

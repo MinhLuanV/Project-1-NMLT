@@ -156,7 +156,7 @@ void statistic_late_return_reader()
         if (day_late > 0)
         {
             late_count++;
-            reader_index = find_reader_index_by_code(&slip_reader_code[i]);
+            reader_index = find_reader_index_by_code(slip_reader_code[i]);
             if (reader_index != -1)
             {
                 printf("Mã độc giả\t\t :%03d\n", reader_code[reader_index]);

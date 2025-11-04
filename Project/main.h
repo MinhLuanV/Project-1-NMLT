@@ -8,7 +8,7 @@ void show_list_reader();
 void add_reader();
 
 // Hàm tìm vị trí của độc giả theo mã độc giả
-int find_reader_index_by_code(int reader_code[100]);
+int find_reader_index_by_code(int input_code);
 
 // Hàm chỉnh sửa thông tin một độc giả
 void edit_reader_by_code();
@@ -29,7 +29,7 @@ void show_list_book();
 void add_book();
 
 //Hàm tìm kiếm vị trí sách theo ISBN
-int find_book_index_by_ISBN(int book_ISBN[100]);
+int find_book_index_by_ISBN(int input_isbn);
 
 // Hàm chỉnh sửa thông tin một quyển sách
 void edit_book_by_ISBN();

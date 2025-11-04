@@ -82,17 +82,28 @@ void add_book()
 	book_count++;
 }
 
-// Hàm tìm kiếm vị trí sách theo ISBN
-int find_book_index_by_ISBN(int book_ISBN[100])
+ //Hàm tìm kiếm vị trí sách theo ISBN
+//int find_book_index_by_ISBN(int book_ISBN[100])
+//{
+//	int index;		// Biến thể hiện vị trí tìm được
+//	for (int i = 0; i < book_count; i++)
+//	{
+//		if (book_ISBN[i] != 0 )
+//		{
+//			index = i;
+//			return index;
+//		}
+//	}
+//	printf("Không tìm thấy sách");
+//	return -1;
+//}
+
+int find_book_index_by_ISBN(int input_isbn)
 {
-	int index;		// Biến thể hiện vị trí tìm được
-	for (int i = 0; i < book_count; i++)
+	int index = input_isbn - 1;
+	if (book_ISBN[index] != 0)
 	{
-		if (book_ISBN[i] != 0 )
-		{
-			index = i;
-			return index;
-		}
+		return index;
 	}
 	printf("Không tìm thấy sách");
 	return -1;
@@ -109,7 +120,7 @@ void edit_book_by_ISBN()
 	}
 	printf("Nhập mã sách cần chỉnh sửa: ");
 	scanf_s(" %03d", &ISBN_to_edit);
-	int index = find_book_index_by_ISBN(&ISBN_to_edit);
+	int index = find_book_index_by_ISBN(ISBN_to_edit);
 
 	if (index == -1)
 	{
@@ -172,7 +183,7 @@ void delete_book()
 	printf("--- XÓA THÔNG TIN SÁCH ---\n");
 	printf("Nhập mã sách cần xóa: ");
 	scanf_s(" %03d", &ISBN_to_delete);
-	int index = find_book_index_by_ISBN(&ISBN_to_delete);
+	int index = find_book_index_by_ISBN(ISBN_to_delete);
 	if (index == -1)
 	{
 		printf("Không tìm thấy sách.\n");
